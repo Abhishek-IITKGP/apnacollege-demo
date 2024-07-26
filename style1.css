@@ -1,0 +1,68 @@
+body{
+    text-align: center;
+}
+#head{
+    color: white;
+    background-color: black;
+}
+#footer{
+    background-color: black;
+    color: white;
+}
+.content{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#navigationbar{
+    background-color: black;
+}
+#logo{
+    color: orange;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#account{
+    color:white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+   
+}
+#mycart{
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+   
+}
+#contact{
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+#searchbar{
+    margin-top: 1%;
+    margin-bottom: 1%;
+   
+    border: solid;
+}
+#search{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: orange;
+    color: black;
+    border: solid;
+}
+a{
+    margin-right: 195px;
+    text-decoration: none;
+}
+#foot{
+    color: wheat;
+    background-color: black;
+}
+#cont{
+    height: 600px;
+    margin-top: 200px;
+}

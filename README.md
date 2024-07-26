@@ -1,2 +1,2 @@
 # apnacollege-demo
-author - abhishek kumar
+author - abhishek

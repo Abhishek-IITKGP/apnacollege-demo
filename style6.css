@@ -1,0 +1,15 @@
+div{
+    height: 100px;
+    width: 100px;
+    /* background-color: aqua; */
+    text-align: center;
+    border-radius: 50%;
+    border: solid black;
+    border-top: solid 2px white;
+    animation: rotationanimation 2s ease-in infinite normal;
+    transition-delay: 1s;
+}
+
+@keyframes rotationanimation{
+    from{rotate: 0deg;} to {rotate: 360deg;}
+}

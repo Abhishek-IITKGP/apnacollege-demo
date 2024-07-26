@@ -1,0 +1,21 @@
+.grid-element{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: black;
+    color: white;
+    height: 300%;
+}
+.grid-element > div{
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
+#item8{
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+    grid-row-start: 1;
+    grid-row-end: 5;
+
+}
