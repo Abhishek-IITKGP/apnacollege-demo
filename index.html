@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-    <link rel="stylesheet" href="style7.css">
+    <title>Using DOM for read and modify document</title>
 </head>
 <body>
-    <div class="grid-element">
-        <div id="item1">1</div>
-        <div id="item2">2</div>
-        <div id="item3">3</div>
-        <div id="item4">4</div>
-        <div id="item5">5</div>
-        <div id="item6">6</div>
-        <div id="item7">7</div>
-        <div id="item8">8</div>
-        <div id="item9">9</div>
-        <div id="item10">10</div>
-        <div id="item11">11</div>
-        <div id="item12">12</div>
-        <div id="item13">13</div>
-        <div id="item14">14</div>
-        <div id="item15">15</div>
-    </div>
+    <input type="button" value="change Using DOM" onclick="changeContent()">
+    <h2>This is first heading</h2>
+    <p>Hello world!</p>
 </body>
+<script>
+    function changeContent(){
+        //here i have accessed the header
+        const head = document.getElementsByTagName('h2').item(0);
+        head.firstChild.data = 'This is a dynamic heading';
+
+        //now access the paragraph
+        const para = document.getElementsByTagName('p').item(0);
+        para.firstChild.data = 'this is the first paragraph';
+
+        //this is the text for second paragraph
+        const newPara = document.createTextNode('this is the second paragraph');
+        //new element is made to become te second paragrpah
+        const newElement = document.createElement('p');
+
+        newElement.appendChild(newPara);
+        //now with this we have a element within that we added a text node.
+
+        //now append this new node in the parent node of paragraph so that all the paragraph node is now connected to the parent node of the paragraph.
+        para.parentNode.appendChild(newElement);
+    }
+</script>
 </html>
